@@ -13,7 +13,13 @@ export default function Categories() {
   return (
     <div className={s.container}>
       {
-        categories.map(category => <CategoryCard key={category} category={category} />)
+        categories.length === 0
+          ? <p>Loading...</p>
+          : categories.map(
+            category => <CategoryCard
+              key={category}
+              category={category}
+            />)
       }
     </div>
   )

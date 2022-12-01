@@ -5,7 +5,7 @@ import Categories from '../../pages/Categories/index'
 import NotFound from '../../pages/NotFound/index'
 import Layout from '../Layout'
 import Products from '../../pages/Products'
-import DescriptionCard from '../DescriptionCard'
+import DescriptionCard from '../../pages/DescriptionCard/index'
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/categories' element={<Categories />} />
           <Route path='category/:category' element={<Products/>}/>
-          <Route path='product/:' element={<DescriptionCard/>}/>
+          <Route path='product/:id' element={<DescriptionCard/>}/>
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
