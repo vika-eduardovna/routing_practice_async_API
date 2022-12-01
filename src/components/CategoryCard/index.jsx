@@ -3,7 +3,7 @@ import s from './style.module.sass'
 import { Link } from 'react-router-dom'
 
 export default function CategoryCard({ category }) {
-  const link = `/product/${category}`
+  const link = `/category/${category}`
   return (
 
     <Link

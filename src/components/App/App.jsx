@@ -13,10 +13,10 @@ function App() {
     < >
       <Routes>
         <Route path='/' element={<Layout/>}>
-          <Route path='/' element={<Home />} />
+          <Route index element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/categories' element={<Categories />} />
-          <Route path='product/:category' element={<Products/>}/>
+          <Route path='category/:category' element={<Products/>}/>
           <Route path='product/:' element={<DescriptionCard/>}/>
           <Route path='*' element={<NotFound />} />
         </Route>
